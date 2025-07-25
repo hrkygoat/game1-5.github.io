@@ -1198,7 +1198,7 @@ function stageClear() {
         nextStageButton.textContent = "GAME COMPLETE!";
         nextStageButton.disabled = false; // ボタンを有効にする
         nextStageButton.onclick = () => { // クリック時のリダイレクト処理を追加
-            window.location.href = 'https://hrkygoat.github.io/game1-3.github.io/'; // ここに指定のURLを設定
+            window.location.href = ''; // ここに指定のURLを設定
         };
     }
 }
