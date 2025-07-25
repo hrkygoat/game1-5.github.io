@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横スクロールアクションゲーム</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="gameUI">
+        <div id="score">Score: 0</div>
+        <div id="lives">Lives: 3</div>
+        <button id="pauseButton" class="control-button">PAUSE</button> </div>
+
+    <div id="controls" class="hidden">
+        <div id="dpad">
+            <button id="leftButton" class="control-button">&larr;</button>
+            <button id="rightButton" class="control-button">&rarr;</button>
+        </div>
+        <button id="jumpButton" class="control-button">JUMP</button>
+    </div>
+    <div id="startScreen">
+        <h1>Are you ready?</h1>
+        <button id="startButton">START GAME</button>
+    </div>
+
+    <div id="gameOverScreen" class="hidden">
+        <h1>はいおまえシボウm9(^Д^)プギャーｗｗｗ</h1>
+        <button id="continueButton">CONTINUE (3)</button>
+        <button id="restartButton">RESTART</button>
+    </div>
+
+    <div id="stageClearScreen" class="hidden">
+        <h1>STAGE CLEAR!</h1>
+        <button id="nextStageButton">NEXT STAGE</button>
+        <button id="restartFromClearButton">RESTART</button>
+    </div>
+
+    <div id="pauseScreen" class="hidden">
+        <h1>PAUSED</h1>
+        <button id="resumeButton">RESUME</button>
+        <button id="restartFromPauseButton">RESTART</button>
+    </div>
+
+    <audio id="bgm" src="assets/bgm/bgm.mp3" preload="auto" loop></audio>
+    <audio id="bgmStage2" src="assets/bgm/bgm_stage2.MP3" preload="auto" loop></audio>
+    <audio id="jumpSound" src="assets/bgm/jump.wav" preload="auto"></audio>
+    <audio id="hitSound" src="assets/bgm/hit.wav" preload="auto"></audio>
+    <audio id="enemyHitSound" src="assets/bgm/enemy_hit.wav" preload="auto"></audio>
+    <audio id="collectItemSound" src="assets/bgm/collect_item.wav" preload="auto"></audio>
+    <audio id="blockHitSound" src="assets/bgm/block_hit.wav" preload="auto"></audio>
+    <audio id="stageClearSound" src="assets/bgm/stage_clear.wav" preload="auto"></audio>
+    <audio id="shootSound" src="assets/bgm/shoot.wav" preload="auto"></audio>
+    
+    <script src="js/game.js"></script>
+</body>
+</html>
